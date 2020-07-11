@@ -31,6 +31,9 @@
         'views/wizard_sale_order_view.xml',
     ],
     'license': "AGPL-3",
+    "images": [
+        "static/description/images/odoo4.png",
+    ],
     'installable': True,
     'application': False,
     'auto_install': False,
