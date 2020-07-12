@@ -2,11 +2,11 @@
 # Part of Odoo. See LICENSE file for full copyright and licensing details.
 
 {
-    'name': 'DH - Sale Order Custom Set Confirm All & Partner Show By Salesperson',
+    'name': 'DH - Sale Order Confirm All & Partner Show By Salesperson',
     'version': "12.0.1.1.1",
     'category': 'Sales',
     'description': """
-    Set Confirm All, Partner Show By Salesperson
+    Sale Confirm All, Partner Show By Salesperson
     """,
     'summary': 'Sales Custom For Odoo 12',
     'sequence': '12',
