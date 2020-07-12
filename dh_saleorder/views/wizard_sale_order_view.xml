@@ -1,0 +1,36 @@
+<odoo>
+    <data>
+      <record id="wizard_sale_order_confirm_all_form_view" model="ir.ui.view">
+            <field name="name">wizard.sale.order.confirm.all.form.view</field>
+            <field name="model">wizard.sale.order.confirm.all</field>
+            <field name="arch" type="xml">
+                <form string="Wizard">
+                    <p>Set Confirm All Form Quotation to Sale Order</p>
+                    <footer>
+                        <button name="action_sale_confirm_all" string="Ok" type="object" class="oe_highlight"/>
+                        <button string="Cancel" class="oe_link" special="cancel"/>
+                    </footer>
+                </form>
+            </field>
+        </record>
+
+        <record id="wizard_sale_order_confirm_all_act_window" model="ir.actions.act_window">
+            <field name="name">wizard.sale.order.confirm.all.act.window</field>
+            <field name="res_model">wizard.sale.order.confirm.all</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">form</field>
+            <field name="target">new</field>
+        </record>
+
+        <act_window
+                id="action_sale_confirm_all"
+                name="Set Confirm All"
+                src_model="sale.order"
+                res_model="wizard.sale.order.confirm.all"
+                view_type="form"
+                view_mode="form"
+                key2="client_action_multi"
+                target="new"
+                groups="dh_saleorder.group_sale_order_set_confirm_all"/>
+    </data>
+</odoo>
